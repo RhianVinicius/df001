@@ -3,7 +3,7 @@ import "dart:io";
 
 void main() async {
   // Lê o arquivo .json e armazena seu conteúdo em uma string convertida para Map
-  var config = File("Desafios/df001/posts.json");
+  var config = File("posts.json");
   var entradaJson = await config.readAsString();
   var saidaJson = jsonDecode(entradaJson);
 
@@ -41,5 +41,5 @@ void main() async {
   }
 
   // Exibe o relatório
-  print(relatorio);
+  print(relatorio[0]);
 }
